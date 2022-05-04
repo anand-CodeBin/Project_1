@@ -1,23 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import './css/bootstrap.min.css'
+import Container from './components/pages/Posts/Post.container';
+import {Outlet} from 'react-router-dom'
+import Header from './components/Header/Header.component';
+import { useContext } from 'react';
+import { loginContext } from './Contexts/LoginContext';
+import Home from './components/pages/Home/Home';
+import {useNavigate} from 'react-router-dom'
 
 function App() {
+
+  const auth = useContext(loginContext);
+  const goTo = useNavigate()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Header />
+      <Home/>
+      
+      <Outlet/>
     </div>
   );
 }

@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "author": "abc",
+      "disc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "has_read": true,
+      "thumbnail": "https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "upload_time": 1651555891
+    },
+    {
+      "id": 3,
+      "author": "abc",
+      "disc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "has_read": false,
+      "thumbnail": "https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "upload_time": 1651555892
+    },
+    {
+      "id": 4,
+      "author": "abc",
+      "disc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "has_read": false,
+      "thumbnail": "https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "upload_time": 1651555896
+    },
+    {
+      "id": 6,
+      "author": "abc",
+      "disc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "has_read": false,
+      "thumbnail": "https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "upload_time": 1651555900
+    },
+    {
+      "author": "xyz",
+      "disc": "From the cypress",
+      "upload_time": 1651584173164,
+      "thumbnail": "https://images.dog.ceo/breeds/spaniel-cocker/n02102318_3658.jpg",
+      "has_read": false,
+      "id": 7
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "name": "123",
+      "pass": "123",
+      "last_Login": 1651643249524,
+      "id": 1
+    }
+  ]
+}

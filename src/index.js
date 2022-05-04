@@ -1,13 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store } from './Redux/store';
+import { Routes,Route, BrowserRouter } from 'react-router-dom'
+import Login from './components/pages/Login/Login';
+import Container from './components/pages/Posts/Post.container';
+import LogInContextProvider , {loginContext} from './Contexts/LoginContext';
+import Upload from './components/pages/Upload/Upload';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Provider store={store}>
+        <LogInContextProvider childer={
+                  <Routes>
+                  
+                  <Route path='/' element={<App/>}>
+                    <Route path='login' element={ <Login />}/>
+                    <Route path='posts' element={ <Container />}/>
+                    <Route path='upload' element={<Upload />}/>     
+                  </Route>
+
+                  </Routes>
+        }>
+        </LogInContextProvider>
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
