@@ -8,7 +8,7 @@ Run the following command in the terminal. <br>
 `npm install` or `yarn add`
 
 
-### 3.Creating Json Server
+### 3.Installing Json Server
 
 Install the module 'json-server' globally in your node modules.
 `npm install json-server -g`
